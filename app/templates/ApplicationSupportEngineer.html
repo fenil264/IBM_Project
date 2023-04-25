@@ -1,0 +1,192 @@
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+
+            
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                            </div>
+                        </li>
+                  
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+      <footer id="footer" class="section">
+
+         <!-- container -->
+         <div class="container">
+
+            <!-- row -->
+           
+
+               <!-- footer logo -->
+               
+               <!-- footer logo -->
+
+
+            
+
+
+                  <div class="about_section layout_padding padding_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="about_taital"> Application Support Engineer </h1>
+               <p class="about_text" style="color:black">Cybersecurity specialists play a key role in securing information systems. By monitoring, detecting, investigating, analyzing, and responding to security events, cybersecurity specialists protect systems from cybersecurity risks, threats, and vulnerabilities.
+
+                Application support engineers oversee the installation and maintenance of software applications in order to streamline business operations. Their duties include optimizing software application performance, installing updates, and performing debugging procedures. They may be employed by companies, or work as freelance contractors.
+                n application support engineer (ASE) is an IT professional who is responsible for troubleshooting the software applications a company uses and ensuring that help desk tickets are resolved in a timely fashion. In a large enterprise, an ASE may act as a subject matter expert for a specific software stack. In a small to mid-size business, an ASE will typically be responsible for supporting a limited number of client-facing software applications.
+
+                In addition to diagnosing bugs and problems that result in a poor user experience (UX), ASEs in large companies are often tasked with using what they learn to identify potential product enhancements. According to the employment website Glassdoor, an ASE with advanced skills can expect to earn a salary of $70k per year in the United States.
+
+                Essential day-to-day responsibilities for managing the event process include the following:
+
+                Provide technical support for enterprise-level application systems.
+                Respond to general questions and trouble tickets in a timely manner.
+                Research, diagnose, troubleshoot and identify potential solutions for how to resolve an issue.
+                Prioritize multiple, open issues.
+                Document issue triage as troubleshooting progresses.
+                Follow best practices for change control of proposed solutions.
+                Maintain service reports.
+                Document actionable bugs for engineering resolution.
+                </p>
+
+                
+               
+               
+            </div>
+            <div class="col-md-6">
+               <!-- <div><img src="static/images/compieimg.jpg" class="image_1"></div> -->
+               <!-- <div><img src="D:/SEM 8/Final_4/flask-quiz-app/app/static/images/compieimg.jpg" class="image_1"></div> -->
+               <div class="col-md-6">
+                  <div><img src="{{ url_for('static', filename='images/compieimg.jpg') }}" class="image_1"></div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--about section end -->
+   <!--footer section start -->
+  
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->

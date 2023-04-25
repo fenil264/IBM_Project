@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>  
+<html>  
+<head>  
+    <title>OTP Verification</title>  
+</head>  
+  
+<body>  
+  
+<form action = "/validate" method="post">  
+  
+<h4> One-time password has been sent to the email id. Please check the email for the verification.</h4>  
+  
+Enter OTP: <input type="text" name="otp">  
+  
+<input type="submit" value="Submit">  
+  
+</form>  
+</body>  
+</html> -->
+
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>OTP Verification Form</title>-->
+    <link rel="stylesheet" href="otp.css" />
+      <link href="{{ url_for('static', filename='css/otp.css') }}" rel="stylesheet" media="all">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!--<script src="script.js" defer></script>-->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <i class="bx bxs-check-shield"></i>
+      </header>
+      <h4>Enter OTP Code</h4>
+      <form action="/validate", method ="post">
+        <div class="input-field">
+            <input type="text" name="otp"/>
+        </div>
+        <input type = "submit" value ="Verify OTP"/>
+      </form>
+    </div>
+  </body>
+</html>
+

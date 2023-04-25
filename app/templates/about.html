@@ -1,0 +1,178 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest" style="color:black;">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+<style>
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  }
+</style>           
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                        <a href="{{ url_for('viz') }}">Vizualization</a>
+                            </div>
+                        </li>
+                  
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+      <footer id="footer" class="section">
+
+         <!-- container -->
+         <div class="container">
+
+            <!-- row -->
+           
+
+               <!-- footer logo -->
+               
+               <!-- footer logo -->
+
+
+            
+
+
+                  <div class="about_section layout_padding padding_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="about_taital">About Us</h1>
+               <p class="about_text" style="color:black">CareerCompass is an online platform designed to provide individuals with helpful information and resources to assist them in making informed decisions about their career path. The website typically offers a variety of tools and services, including career assessments, job search resources,and guidance on career development. <br> <br> Overall, a career guidance website serves as a comprehensive resource for anyone looking to explore different career paths, identify their strengths and interests, and develop the skills and knowledge necessary to succeed in their chosen field.</p>
+               
+               
+            </div>
+            <div class="col-md-6">
+               <div><img src="static/images/img-1.png" class="image_1"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--about section end -->
+   <!--footer section start -->
+  
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->
+
+
+
+

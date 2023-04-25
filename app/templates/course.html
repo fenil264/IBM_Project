@@ -1,0 +1,941 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+     
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+
+<style>
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  }
+</style>    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  
+    <![endif]-->
+  <link href="{{ url_for('static', filename='css2/fontawesome.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css2/owl.css') }}" rel="stylesheet" media="all">
+  <link href="{{ url_for('static', filename='css2/lightbox.css') }}" rel="stylesheet" media="all">
+
+
+
+<script src="{{ url_for('static', filename='js2/custom.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/isotopejs') }}"></script>
+<script src="{{ url_for('static', filename='js2/isotope.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/lightbox.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/owl-carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/slick-slider.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/tabs.js') }}"></script>
+<script src="{{ url_for('static', filename='js2/video.js') }}"></script>
+
+
+</head>
+<body>
+<!--Header-->
+<header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+      <div class="container">
+
+        <div class="navbar-header">
+          <!-- Logo -->
+          <div class="navbar-brand">
+            <a class="logo" href="/hometest" style="color:black;">CareerCompass</a>
+          </div>
+          <!-- /Logo -->
+
+          <!-- Mobile toggle -->
+          <button class="navbar-toggle">
+            <span></span>
+          </button>
+          <!-- /Mobile toggle -->
+        </div>
+
+
+          <!-- Navigation -->
+        <nav id="nav">
+          <ul class="main-menu nav navbar-nav navbar-right">
+                        <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Explore <span>&#11167;</span></i></a>
+                            <div class="dropdown-content">
+                <a href="#WD">Web Development</a>
+                <a href="#DS">Data Science</a>
+                <a href="#PL">Programming</a>
+                <a href="#DA">Data Analytics</a>
+              </div>
+                        </li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+              <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+            
+                        
+          </ul>
+        </nav>
+        <!-- /Navigation -->
+        <?php endif ?>
+
+      </div>
+    </header>
+
+   
+  
+  <!-- Footer -->
+<div id="courses" class="section">
+
+      <!-- container -->
+      <div class="container">
+<!-- <h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p> -->
+<br>
+<br>
+                   
+        <hr class="section-hr" >
+        <div id="courses-wrapper"  >
+                    
+          <!-- row -->
+          <div class="row" >
+                        <div class="section-header text-center" id="WD" >
+              <h2  >Web Development</h2>
+
+            </div>
+             
+            <div class="owl-service-item owl-carousel">  
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+
+              <div class="course">
+                <a href="https://www.freecodecamp.org/news/want-to-learn-css-heres-our-free-20-part-course-9fb3dcb0a971/" target="_blank" class="course-img">
+                  <img src="static/img/css.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.freecodecamp.org/news/want-to-learn-css-heres-our-free-20-part-course-9fb3dcb0a971/" target="_blank" style="font-size:18px; text-align: center">Complete CSS Course</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+            
+            <!-- single course -->
+            <div class="down-content" >
+            <div class="item">
+            <div class="icon">  
+              <div class="course">
+                <a href="https://www.w3schools.com/html/" target="_blank" class="course-img">
+                  <img src="static/img/html.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.w3schools.com/html/" target="_blank" style="font-size:18px; text-align: center"><b> HTML </b></a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Web Design</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank" class="course-img">
+                  <img src="static/img/bs.jpg " alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank" style="font-size:18px; text-align: center">Bootstrap</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Web Development</span>
+                    <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.javatpoint.com/javascript-tutorial" class="course-img" target="_blank">
+                  <img src="static/img/js.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.javatpoint.com/javascript-tutorial" target="_blank" style="font-size:18px; text-align: center">Introduction to Javascript</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Web Design</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+          
+          <!-- /row -->
+
+          <!-- row -->
+          
+                        
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/thecompletewebdeveloper/" target="_blank" class="course-img">
+                  <img src="static/img/full.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/thecompletewebdeveloper/" target="_blank" style="font-size:18px; text-align: center">Full Stack Development</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- /single course -->
+
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.coursera.org/learn/javascript-jquery-json" target="_blank" class="course-img">
+                  <img src="static/img/jq.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.coursera.org/learn/javascript-jquery-json" target="_blank" style="font-size:18px; text-align: center">JQuery Tutorial</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank" class="course-img">
+                  <img src="static/img/react.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank" style="font-size:18px; text-align: center">React JS</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/the-complete-guide-to-angular-2/" class="course-img" target="_blank">
+                  <img src="static/img/ajs.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/the-complete-guide-to-angular-2/" target="_blank" style="font-size:18px; text-align: center">AngularJS Tutorial</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Web Development</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+            <!-- /single course -->
+
+          </div>
+            
+        
+   
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+<script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+            
+            
+
+            
+
+          </div>
+          <!-- /row -->
+
+          <!-- row -->
+         <div class="row" >
+                        <div class="section-header text-center" id="DA" >
+              <h2  >Data Analytics</h2>
+
+            </div>
+             
+            <div class="owl-service-item owl-carousel">  
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+
+              <div class="course">
+                <a href="https://www.simplilearn.com/introduction-to-hadoop-free-course-skillup" target="_blank" class="course-img">
+                  <img src="static/img/hadoop.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.simplilearn.com/introduction-to-hadoop-free-course-skillup" target="_blank" style="font-size:18px; text-align: center">Hadoop Course</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Data Analytics</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+            
+            
+
+            
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/useful-excel-for-beginners/" class="course-img" target="_blank">
+                  <img src="static/img/excel.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/useful-excel-for-beginners/" target="_blank" style="font-size:18px; text-align: center">Introduction to Excel</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Data Analytics</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+          
+          <!-- /row -->
+
+          <!-- row -->
+          
+                        
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.coursera.org/specializations/data-visualization" target="_blank" class="course-img">
+                  <img src="static/img/tab.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.coursera.org/specializations/data-visualization" target="_blank" style="font-size:18px; text-align: center">Data Vizulization with Tableau</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Data Analytics</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- /single course -->
+
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/apache-spark-spark-sql-streaming-complete-" target="_blank" class="course-img">
+                  <img src="static/img/spark.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/apache-spark-spark-sql-streaming-complete-" target="_blank" style="font-size:18px; text-align: center">Spark Tutorial</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Data Analytics</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            
+
+            
+         
+
+          </div>
+          <!-- /row -->
+
+          <!-- row -->
+          <div class="row" >
+                        <div class="section-header text-center" id="PL" >
+              <h2  >Programming Languages</h2>
+
+            </div>
+             
+            <div class="owl-service-item owl-carousel">  
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+
+              <div class="course">
+                <a href="https://www.freecodecamp.org/news/python-programming-course/" class="course-img">
+                  <img src="static/img/python.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.freecodecamp.org/news/python-programming-course/" target="_blank" style="font-size:18px; text-align: center">Python</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+            
+            <!-- single course -->
+            <div class="down-content" >
+            <div class="item">
+            <div class="icon">  
+              <div class="course">
+                <a href="https://www.w3schools.com/java/" class="course-img" target="_blank">
+                  <img src="static/img/java.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.w3schools.com/java/" target="_blank" style="font-size:18px; text-align: center;" >Learn Java</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/r-for-beginners-learn-r-programming-from-" class="course-img" target="_blank">
+                  <img src="static/img/R.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/r-for-beginners-learn-r-programming-from-" target="_blank" style="font-size:18px; text-align: center">R Tutorial</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/the-complete-sql-bootcamp/" class="course-img" target="_blank">
+                  <img src="static/img/sql.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/the-complete-sql-bootcamp/" target="_blank" style="font-size:18px; text-align: center">Learn SQL</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+          
+          <!-- /row -->
+
+          <!-- row -->
+          
+                        
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.youtube.com/watch?v=si-KFFOW2gw&list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh" target="_blank" class="course-img">
+                  <img src="static/img/c.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.youtube.com/watch?v=si-KFFOW2gw&list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh" target="_blank" style="font-size:18px; text-align: center">C</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- /single course -->
+
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.w3schools.com/cpp/default.asp" class="course-img" target="_blank">
+                  <img src="static/img/c++.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.w3schools.com/cpp/default.asp" target="_blank" style="font-size:18px; text-align: center">C++</a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.udemy.com/course/learn-to-code-with-ruby-lang/" target="_blank" class="course-img">
+                  <img src="static/img/ruby.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.udemy.com/course/learn-to-code-with-ruby-lang/" target="_blank" style="font-size:18px; text-align: center">Ruby Tutorial</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.programiz.com/swift-programming" target="_blank" class="course-img">
+                  <img src="static/img/swift.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.programiz.com/swift-programming" target="_blank" style="font-size:18px; text-align: center">Swift programming</a>
+                <div class="course-details" style="margin:5px;">
+                  <span class="course-category">Programming</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        <div class="row" >
+                        <div class="section-header text-center" id="DS" >
+              <h2  >Data Science</h2>
+
+            </div>
+             
+            <div class="owl-service-item owl-carousel">  
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+
+              <div class="course">
+                <a href="https://www.simplilearn.com/data-science-free-course-for-beginners-skillup" target="_blank" class="course-img">
+                  <img src="static/img/DS.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.simplilearn.com/data-science-free-course-for-beginners-skillup" 
+                target="_blank" style="font-size:18px; text-align: center"><b>Introduction to Data Science</b></a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Data Science</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+            
+            <!-- single course -->
+            <div class="down-content" >
+            <div class="item">
+            <div class="icon">  
+              <div class="course">
+                <a href="https://www.upgrad.com/bootcamps/job-linked-data-science-advanced-" target="_blank" class="course-img">
+                  <img src="static/img/ids.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.upgrad.com/bootcamps/job-linked-data-science-advanced-" target="_blank" style="font-size:18px; text-align: center"><b>Data Science Tutorial</b></a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Data Science</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <!-- single course -->
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://app.datacamp.com/learn/courses/introduction-to-chatgpt" target="_blank" class="course-img">
+                  <img src="static/img/GPT.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://app.datacamp.com/learn/courses/introduction-to-chatgpt" target="_blank" style="font-size:18px; text-align: center"><b>Introduction to ChatGPT</b></a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Data Science</span>
+                  <span class="course-price course-premium">Premium</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+            <div class="down-content">
+            <div class="item">
+              <div class="icon">
+              <div class="course">
+                <a href="https://www.youtube.com/watch?v=ZftI2fEz0Fw&list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH" target="_blank" class="course-img">
+                  <img src="static/img/ML.jpg" alt="">
+                  <i class="course-link-icon fa fa-link"></i>
+                </a>
+                <a class="course-title" href="https://www.youtube.com/watch?v=ZftI2fEz0Fw&list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH" target="_blank" style="font-size:18px; text-align: center"><b>Mastering Machine Learning</b></a>
+                <div class="course-details" style="margin: 5px;">
+                  <span class="course-category">Data Science</span>
+                  <span class="course-price course-free">Free</span>
+                </div>
+              </div>
+                </div>
+            </div>
+            </div>
+            <!-- /single course -->
+
+          
+          <!-- /row -->
+
+          <!-- row -->
+          
+                        
+            <!-- single course -->
+            
+
+            <!-- /single course -->
+
+
+            <!-- single course -->
+            
+            
+          </div>
+          </div>
+            <!-- /single course -->
+
+          </div>
+          <!-- /row -->
+
+        </div>
+        <!-- /courses -->
+
+        <!--<div class="row">
+          <div class="center-btn">
+            <a class="main-button icon-button" href="#">More Courses</a>
+          </div>
+        </div>-->
+
+      </div>
+      <!-- container -->
+
+    </div>
+    <!-- /Courses -->
+
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/assets/js/isotope.min.js"></script>
+    <script src="static/assets/js/owl-carousel.js"></script>
+    <script src="static/assets/js/lightbox.js"></script>
+    <script src="static/assets/js/tabs.js"></script>
+    
+    <script src="static/assets/js/slick-slider.js"></script>
+    <script src="static/assets/js/custom.js"></script>
+<script>
+
+   footer id="footer" class="section"
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+          <!-- footer logo -->
+          <div class="col-md-6">
+            <div class="footer-logo" id="we_b">
+              <div class="logo" style="font-size: 30px;" >CareerCompass</div>
+            </div>
+          </div>
+          <!-- footer logo -->
+
+
+        </div>
+        <!-- /row -->
+
+        <!-- row -->
+        <div id="bottom-footer" class="row">
+
+         
+
+          <!-- copyright -->
+          <div class="col-md-8 col-md-pull-4">
+            <div class="footer-copyright">
+              <span>&copy; Copyright 2023. All Rights Reserved. </span>
+            </div>
+          </div>
+          <!-- /copyright -->
+
+        </div>
+        <!-- row -->
+
+      </div>
+      <!-- /container -->
+
+    </footer>
+    <!-- /Footer -->
+
+    <!-- preloader -->
+    <div id='preloader'><div class='preloader'></div></div>
+    <!-- /preloader -->
+
+
+    <!-- jQuery Plugins -->
+
+
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- Footer -->
+    <footer id="footer" class="section">
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- row -->
+        <div class="row">
+
+          <!-- footer logo -->
+          <div class="col-md-6">
+            <div class="footer-logo">
+              <a class="logo" style="font-size: 30px;" >CareerCompass</a>
+            </div>
+          </div>
+          <!-- footer logo -->
+
+
+        </div>
+        <!-- /row -->
+
+        <!-- row -->
+        <div id="bottom-footer" class="row">
+
+          <!-- social -->
+          <div class="col-md-4 col-md-push-8">
+            <!--<ul class="footer-social">
+              <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>-->
+          </div>
+          <!-- /social -->
+
+          <!-- copyright -->
+          <div class="col-md-8 col-md-pull-4">
+            <div class="footer-copyright">
+              <span>&copy; Copyright 2023. All Rights Reserved. </span>
+            </div>
+          </div>
+          <!-- /copyright -->
+
+        </div>
+        <!-- row -->
+
+      </div>
+      <!-- /container -->
+
+    </footer>
+
+    
+    <!-- /Footer -->
+
+    <!-- preloader -->
+    <div id='preloader'><div class='preloader'></div></div>
+
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; 
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->
+
+
+
+

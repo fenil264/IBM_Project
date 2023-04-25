@@ -1,0 +1,201 @@
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+
+            
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                            </div>
+                        </li>
+                  
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+      <footer id="footer" class="section">
+
+         <!-- container -->
+         <div class="container">
+
+            <!-- row -->
+           
+
+               <!-- footer logo -->
+               
+               <!-- footer logo -->
+
+
+            
+
+
+                  <div class="about_section layout_padding padding_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="about_taital">Database Administrator</h1>
+               <p class="about_text" style="color:black">Cybersecurity specialists play a key role in securing information systems. By monitoring, detecting, investigating, analyzing, and responding to security events, cybersecurity specialists protect systems from cybersecurity risks, threats, and vulnerabilities.
+
+                A Database Administrator (DBA) is an individual or person responsible for controlling, maintaining, coordinating, and operating a database management system. Managing, securing, and taking care of the database systems is a prime responsibility. They are responsible and in charge of authorizing access to the database, coordinating, capacity, planning, installation, and monitoring uses, and acquiring and gathering software and hardware resources as and when needed. Their role also varies from configuration, database design, migration, security, troubleshooting, backup, and data recovery. Database administration is a major and key function in any firm or organization that is relying on one or more databases. They are overall commanders of the Database system.
+
+                Types of Database Administrator (DBA) :
+                Administrative DBA – 
+                Their job is to maintain the server and keep it functional. They are concerned with data backups, security, troubleshooting, replication, migration, etc.
+                Data Warehouse DBA – 
+                Assigned earlier roles, but held accountable for merging data from various sources into the data warehouse. They also design the warehouse, with cleaning and scrubs data prior to loading.
+                Cloud DBA – 
+                Nowadays companies are preferring to save their workpiece on cloud storage.  As it reduces the chance of data loss and provides an extra layer of data security and integrity.
+                Development DBA – 
+                They build and develop queries, stores procedure, etc. that meets firm or organization needs. They are par at programming.
+                Application DBA – 
+                They particularly manage all requirements of application components that interact with the database and accomplish activities such as application installation and coordination, application upgrades, database cloning, data load process management, etc.
+                Architect – 
+                They are held responsible for designing schemas like building tables. They work to build a structure that meets organizational needs. The design is further used by developers and development DBAs to design and implement real applications.
+                OLAP DBA – 
+                They design and build multi-dimensional cubes for determination support or OLAP systems.
+                Data Modeler –
+                In general, a data modeler is in charge of a portion of a data architect’s duties. A data modeler is typically not regarded as a DBA, but this is not a hard and fast rule.
+                Task-Oriented DBA –
+                To concentrate on a specific DBA task, large businesses may hire highly specialised DBAs. They are quite uncommon outside of big corporations. Recovery and backup DBA, whose responsibility it is to guarantee that the databases of businesses can be recovered, is an example of a task-oriented DBA. However, this specialism is not present in the majority of firms. These task-oriented DBAs will make sure that highly qualified professionals are working on crucial DBA tasks when it is possible.
+                Database Analyst –
+                This position doesn’t actually have a set definition. Junior DBAs may occasionally be referred to as database analysts. A database analyst occasionally performs functions that are comparable to those of a database architect. The term “Data Administrator” is also used to describe database analysts and data analysts. Additionally, some businesses occasionally refer to database administrators as data analysts.
+
+                </p>
+
+                
+               
+               
+            </div>
+            <div class="col-md-6">
+               <!-- <div><img src="static/images/compieimg.jpg" class="image_1"></div> -->
+               <!-- <div><img src="D:/SEM 8/Final_4/flask-quiz-app/app/static/images/compieimg.jpg" class="image_1"></div> -->
+               <div class="col-md-6">
+                  <div><img src="{{ url_for('static', filename='images/compieimg.jpg') }}" class="image_1"></div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--about section end -->
+   <!--footer section start -->
+  
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->

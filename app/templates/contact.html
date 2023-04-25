@@ -1,0 +1,269 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+
+   <!-- owl carousel style -->
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+   <!-- bootstrap css -->
+   
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="static/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+<style>
+
+
+  
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  }
+</style>
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest" style="color:black;">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+
+            
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                        <a href="{{ url_for('viz') }}">Vizualization</a>
+                            </div>
+                        </li>
+                  <li><a href="/about">About Us</a></li>
+                  
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+ 
+      <footer id="footer" class="section">
+
+        
+
+ <div class="contact_section layout_padding">
+      <div class="container">
+         <h1 class="work_taital">Get In Touch</h1>
+      </div>
+   </div>
+   <div class="contact_section_2">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 padding_0">
+               <div><img src="static/images/img-10.png" class="image_10"></div>
+            </div>
+            <div class="col-md-6">
+               <div class="email_text">
+                  <div class="form-group">
+            <form id="comment-form" action="/submit-comment" class="form-group" method="POST">
+
+			
+				<input type="text" size="50" class="email-bt" id="name" name="name" placeholder="Your Name" required>
+				<input type="emai_l" class="email-bt" id="emai_l" name="emai_l" placeholder="Enter Email"requried>
+				<input name="comment" id="comment" rows="6"   class="email-bt" placeholder="Insert Comments here"></input>
+			<center><input type="submit" class="button button2" class="form-control"></center>
+
+         </div>
+      </div>
+   </div>           
+
+                              <script>
+document.getElementById('comment-form').addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent the form from submitting normally
+
+      // Show a confirmation dialog using window.confirm()
+      if (window.confirm('Are you sure you want to submit this comment?')) {
+        this.submit();  // Submit the form if the user clicks "OK"
+      } else {
+        // Do nothing if the user clicks "Cancel"
+      }
+    });
+
+
+                  </script>
+
+
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>              
+  
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->
+
+
+
+

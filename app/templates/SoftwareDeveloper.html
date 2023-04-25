@@ -1,0 +1,200 @@
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+
+            
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                            </div>
+                        </li>
+                  
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+      <footer id="footer" class="section">
+
+         <!-- container -->
+         <div class="container">
+
+            <!-- row -->
+           
+
+               <!-- footer logo -->
+               
+               <!-- footer logo -->
+
+
+            
+
+
+                  <div class="about_section layout_padding padding_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="about_taital">Software Developer</h1>
+               <p class="about_text" style="color:black">
+				Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software.
+
+				Software itself is the set of instructions or programs that tell a computer what to do. It is independent of hardware and makes computers programmable. There are three basic types:
+
+				System software to provide core functions such as operating systems, disk management, utilities, hardware management and other operational necessities.
+
+				Programming software to give programmers tools such as text editors, compilers, linkers, debuggers and other tools to create code.
+
+				Application software (applications or apps) to help users perform tasks. Office productivity suites, data management software, media players and security programs are examples. Applications also refers to web and mobile applications like those used to shop on Amazon.com, socialize with Facebook or post pictures to Instagram.1
+
+				A possible fourth type is embedded software. Embedded systems software is used to control machines and devices not typically considered computers — telecommunications networks, cars, industrial robots and more. These devices, and their software, can be connected as part of the Internet of Things (IoT).2
+
+				Software development is primarily conducted by programmers, software engineers and software developers. These roles interact and overlap, and the dynamics between them vary greatly across development departments and communities.  
+
+				Programmers, or coders, write source code to program computers for specific tasks like merging databases, processing online orders, routing communications, conducting searches or displaying text and graphics. Programmers typically interpret instructions from software developers and engineers and use programming languages like C++ or Java to carry them out.
+
+				Software engineers apply engineering principles to build software and systems to solve problems. They use modeling language and other tools to devise solutions that can often be applied to problems in a general way, as opposed to merely solving for a specific instance or client. Software engineering solutions adhere to the scientific method and must work in the real world, as with bridges or elevators. Their responsibility has grown as products have become increasingly more intelligent with the addition of microprocessors, sensors and software. Not only are more products relying on software for market differentiation, but their software development must be coordinated with the product’s mechanical and electrical development work.
+
+				Software developers have a less formal role than engineers and can be closely involved with specific project areas — including writing code. At the same time, they drive the overall software development lifecycle — including working across functional teams to transform requirements into features, managing development teams and processes, and conducting software testing and maintenance.3
+
+				The work of software development isn’t confined to coders or development teams. Professionals such as scientists, device fabricators and hardware makers also create software code even though they are not primarily software developers. Nor is it confined to traditional information technology industries such as software or semiconductor businesses. In fact, according to the Brookings Institute (link resides outside of ibm.com), those businesses “account for less than half of the companies performing software development.”
+
+				An important distinction is custom software development as opposed to commercial software development. Custom software development is the process of designing, creating, deploying and maintaining software for a specific set of users, functions or organizations. In contrast, commercial off-the-shelf software (COTS) is designed for a broad set of requirements, allowing it to be packaged and commercially marketed and distributed.
+
+                </p>
+
+                
+               
+               
+            </div>
+            <div class="col-md-6">
+               <!-- <div><img src="static/images/compieimg.jpg" class="image_1"></div> -->
+               <!-- <div><img src="D:/SEM 8/Final_4/flask-quiz-app/app/static/images/compieimg.jpg" class="image_1"></div> -->
+               <div class="col-md-6">
+                  <div><img src="{{ url_for('static', filename='images/compieimg.jpg') }}" class="image_1"></div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--about section end -->
+   <!--footer section start -->
+  
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->
