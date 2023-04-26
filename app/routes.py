@@ -362,6 +362,83 @@ def course():
 @app.route('/viz')
 def viz():
     return render_template('viz.html')
+
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
+@app.route('/ai')
+def ai():
+    return render_template('AIMLSpecialist.html')
+
+@app.route('/ase')
+def ase():
+    return render_template('ApplicationSupportEngineer.html')
+
+@app.route('/ba')
+def ba():
+    return render_template('BusinessAnalyst.html')
+
+@app.route('/cse')
+def cse():
+    return render_template('CustomerServiceExecutive.html')
+
+@app.route('/new')
+def new():
+    return render_template('NetworkingEngineer.html')
+
+@app.route('/css')
+def css():
+    return render_template('CyberSecuritySpecialist.html')
+
+@app.route('/dba')
+def dba():
+    return render_template('DatabaseAdministrator.html')
+
+
+
+@app.route('/ds')
+def ds():
+    return render_template('DataScientist.html')
+
+@app.route('/gd')
+def gd():
+    return render_template('GraphicsDesigner.html')
+
+@app.route('/he')
+def he():
+    return render_template('HardwareEngineer.html')
+
+@app.route('/hde')
+def hde():
+    return render_template('HelpdeskEngineer.html')
+
+@app.route('/iss')
+def iss():
+    return render_template('InformationSecuritySpecialist.html')
+
+@app.route('/dbaa')
+def dbaa():
+    return render_template('DatabaseAdministrator.html')
+
+
+@app.route('/pm')
+def pm():
+    return render_template('ProjectManager.html')
+
+
+@app.route('/sde')
+def sde():
+    return render_template('SoftwareDeveloper.html')
+
+@app.route('/st')
+def st():
+    return render_template('SoftwareTester.html')
+
+@app.route('/api')
+def api():
+    return render_template('APIIntegrationSpecialist.html')
+
 # ---------------------------------------------------------------------------------------
 
 # from app import app
