@@ -1,0 +1,369 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <title>Secure Career Guidance System</title>
+
+      <!-- Google font -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+      
+
+  <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+  
+  <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .fields-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .field {
+      background-image: linear-gradient(to right, rgba(51, 153, 255), rgba(102, 204, 255));
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .field:hover {
+      transform: scale(1.1);
+    }
+
+    .field-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .field-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function goToFieldPage(fieldNumber) {
+      if (fieldNumber === 1) {
+        window.location.href = "AIMLSpecialist.html";
+      } else if (fieldNumber === 2) {
+        window.location.href = "ApplicationSupportEngineer.html";
+      } else if (fieldNumber === 3) {
+        window.location.href = "BusinessAnalyst.html";
+      } else if (fieldNumber === 4) {
+        window.location.href = "CustomerServiceExecutive.html";
+      } else if (fieldNumber === 5) {
+        window.location.href = "CyberSecuritySpecialist.html";
+      } else if (fieldNumber === 6) {
+        window.location.href = "DatabaseAdministrator.html";
+      } else if (fieldNumber === 7) {
+        window.location.href = "DataScientist.html";
+      } else if (fieldNumber === 8) {
+        window.location.href = "GraphicsDesigner.html";
+      } else if (fieldNumber === 9) {
+        window.location.href = "HardwareEngineer.html";
+      } else if (fieldNumber === 10) {
+        window.location.href = "HelpdeskEngineer.html";
+      } else if (fieldNumber === 11) {
+        window.location.href = "InformationSecuritySpecialist.html";
+      } else if (fieldNumber === 12) {
+        window.location.href = "NetworkingEngineer.html";
+      } else if (fieldNumber === 13) {
+        window.location.href = "ProjectManager.html";
+      } else if (fieldNumber === 14) {
+        window.location.href = "SoftwareDeveloper.html";
+      } else if (fieldNumber === 15) {
+        window.location.href = "SoftwareTester.html";
+      } else if (fieldNumber === 16) {
+        window.location.href = "DatabaseAdministrator.html";
+      } else if (fieldNumber === 17) {
+        window.location.href = "APIIntegrationSpecialist.html";
+      }
+
+    }
+  </script>
+
+</head>
+<body>
+<!--Header-->
+        <header id="header" class="transparent-nav" style="position: fixed;background-color: #71BAED; top: 0;">
+         <div class="container">
+
+            <div class="navbar-header">
+               <!-- Logo -->
+               <div class="navbar-brand">
+                  <a class="logo" href="/hometest" style="color:black;">CareerCompass</a>
+               </div>
+               <!-- /Logo -->
+
+               <!-- Mobile toggle -->
+               <button class="navbar-toggle">
+                  <span></span>
+               </button>
+               <!-- /Mobile toggle -->
+            </div>
+<style>
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  }
+</style>           
+            <!-- Navigation -->
+            
+               <!-- Navigation -->
+            <nav id="nav">
+               <ul class="main-menu nav navbar-nav navbar-right">
+                  <li><a href="/hometest">Career Prediction</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                            <div class="dropdown-content">
+                        <a href="/course">Go to Course Page</a>
+                        <a href="">Knowledge Network</a>
+                        <a href="{{ url_for('viz') }}">Vizualization</a>
+                            </div>
+                        </li>
+                  
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="/about">About Us</a></li>
+                  <li><a href="{{ url_for('logout') }}" >Log out</a></li>
+                  
+                        
+               </ul>
+            </nav>
+            <!-- /Navigation -->
+
+         </div>
+      </header>
+   
+   
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+      <footer id="footer" class="section">
+
+        
+   
+  <div class="fields-container">
+    <div class="field" onclick="goToFieldPage(1)">
+      <div class="field-content">
+        <div class="field-title">AI/ML Specialist</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(2)">
+      <div class="field-content">
+        <div class="field-title">Application Support Engineer</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(3)">
+      <div class="field-content">
+        <div class="field-title">Business Analyst</div>
+        
+      </div>
+    </div>
+
+    
+    <div class="field" onclick="goToFieldPage(4)">
+      <div class="field-content">
+        <div class="field-title">Customer Service Executive</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(5)">
+      <div class="field-content">
+        <div class="field-title">CyberSecurity Specialist</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(6)">
+      <div class="field-content">
+        <div class="field-title">Database Administrator</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(7)">
+      <div class="field-content">
+        <div class="field-title">Data Scientist</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(8)">
+      <div class="field-content">
+        <div class="field-title">Graphics Designer</div>
+        
+      </div>
+    </div>
+
+    
+    <div class="field" onclick="goToFieldPage(9)">
+      <div class="field-content">
+        <div class="field-title">Hardware Engineer</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(10)">
+      <div class="field-content">
+        <div class="field-title">Helpdesk Engineer</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(11)">
+      <div class="field-content">
+        <div class="field-title">InformationSecurity Specialist</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(12)">
+      <div class="field-content">
+        <div class="field-title">Networking Engineer</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(13)">
+      <div class="field-content">
+        <div class="field-title">Project Manager</div>
+        
+      </div>
+    </div>
+
+    
+    <div class="field" onclick="goToFieldPage(14)">
+      <div class="field-content">
+        <div class="field-title">Software Developer</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(15)">
+      <div class="field-content">
+        <div class="field-title">Software Tester</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(16)">
+      <div class="field-content">
+        <div class="field-title">Database Administrator</div>
+        
+      </div>
+    </div>
+
+    <div class="field" onclick="goToFieldPage(17)">
+      <div class="field-content">
+        <div class="field-title">API Integration Specialist</div>
+        
+      </div>
+    </div>
+
+  </div>
+            
+        
+   <script src="static/js4/jquery.min.js"></script>
+   <script src="static/js4/popper.min.js"></script>
+   <script src="static/js4/bootstrap.bundle.min.js"></script>
+   <script src="static/js4/jquery-3.0.0.min.js"></script>
+   <script src="static/js4/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js4/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js4/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js4/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script>
+               <!-- /social -->
+
+               <!-- copyright -->
+       
+        </div>
+            <!-- row -->
+
+         </div>
+         <!-- /container -->
+
+      </footer>
+      <!-- /Footer -->
+
+</body>
+
+<style>
+    body {
+      background-color: #e6f2ff; /* replace with your desired color */
+    }
+  </style>
+</html>
+<!--
+
+           
+      #print(jobs_dict[predictions[0]])
+      job = {}
+      #job[0] = jobs_dict[predictions[0]]
+      index = 1
+     #
+
+-->
+
+
+
+
