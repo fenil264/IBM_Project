@@ -348,7 +348,7 @@ def send_otp(email, otp):
     msg['To'] = email
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('fenilapatel19@gnu.ac.in', 'Gnu@123456')
+    server.login('fenilapatel19@gnu.ac.in', '#pass')
     server.sendmail('fenilapatel19@gnu.ac.in', [email], msg.as_string())
     server.quit()
 
