@@ -48,7 +48,7 @@ otp = OTP + " is your OTP"
 msg= otp
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("devanshi2828@gmail.com", "")
+s.login("fenilapatel19@gnu.ac.in", "Gnu@123456")
 
 # otp = randint(000000,999999)  
 
